@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="La ruta del tonto | comandos de la ventaja ejecutar" url="https://pukllay.github.io/vladimir/comandos.html">
+  <details>
+    <summary>COMANDOS DE GIT</summary>
+    <h2>//--CONFIGURACION--//</h2>
+    <h3>--CONFIGURAR NOMBRE</h3>
+      <p>git config --global user.name "vladimir"</p>
+    <h3>--CONFIGURAR CORREO</h3>
+      <p>git config --global user.email "correoejemplo@gmail.com"</p>
+    <h3>--ABRIR SIEMPRE GIT EN EDITOR ...</h3>
+      <p>git config --global core.editor "code --wait"</p>
+    <h3>--PARA SO WINDOWS "true" PARA LINUX O MAC "input"</h3>
+      <p>git config --global core.autocrlf true</p>
+    <h3>--AYUDIN DE MAS CONFIGURACONES</h3>
+      <p>git config -h</p>
+    <h3>--VER NOMBRE</h3>
+      <p>git config user.name</p>
+    <h3>--CAMBIAR EL NOMBRE DE LA RAMA DE master A main</h3>
+      <p>git config --global init.defaultBranch main</p>
+    <h3>--CAMBIAR EL NOMBRE DEL ÚLTIMO COMMIT</h3>
+      <p>git commit --amend</p>
+    <h2>//--CONSULTAR--//</h2>
+    <h3>--VER VERSION</h3>
+      <p>git --version</p>
+    <h3>--VER STADO</h3>
+      <p>git status</p>
+    <h3>--VER USUARIOS</h3>
+      <p>git config user.name</p>
+    <h3>--VER EMAILS</h3>
+      <p>git config user.email</p>
+    <h3>--LISTA DE CONFIGURACIONES</h3>
+      <p>git config --list</p>
+    <h2>//--INICIAR GIT--//</h2>
+    <h3>--INICIAR</h3>
+      <p>git init</p>
+    <h3>--AGREGAR A LA LECTURA TODO</h3>
+      <p>git add .</p>
+    <h3>--AGREGAR A LA LECTURA UN ARCHIVO</h3>
+      <p>git add ****.txt</p>
+    <h3>--SACAR DE LA LECTURA UN ARCHIVO</h3>
+      <p>git rm --cached ****.txt</p>
+    <h3>--GUARDAR CAMBIO</h3>
+      <p>git commit -m "comentario randon"</p>
+    <h3>--RESTAURAR ARCHIVO ELIMINAOD</h3>
+      <p>git restore ****.formato</p>
+      <p>git restore --staged ****.formato</p>
+    <h3>--VER TODOS LOS COMMINT</h3>
+      <p>git log</p>
+    <h3>--VER TODOS LOS COMMINT POR TITULOS</h3>
+      <p>git log --oneline</p>
+    <h3>--BORRAR EL ÚLTIMO COMMIT MANTENIENDO CAMBIOS</h3>
+      <p>git reset --soft HEAD~1  // ~ = alt+126</p>
+    <h3>--BORRAR EL ÚLTIMO COMMIT CON SUS CAMBIOS</h3>
+      <p>git reset --hard HEAD~1  // ~ = alt+126</p>
+    <h3>--RESETEAR O RETORNAR A UN COMMIT</h3>
+      <p>git reset --hard hombreDelCommit</p>
+    <h2>//--RAMAS--//</h2>
+    <h2>//EXISTEN DOS FORMAS</h2>
+    <h3>--CREAR UNA NUEVA RAMA Y ENTRAR A LA NUEVA RAMA</h3>
+      <p>git checkout -b nombreRandon</p>
+    <h3>--CREAR UNA NUEVA RAMA</h3>
+      <p>git branch nombreRandon</p>
+    <h3>--ENTRAR A LA NUEVA RAMA</h3>
+      <p>git checkout nombreRandon</p>
+    <h3>--VER TODAS LAS RAMAS</h3>
+      <p>git branch</p>
+    <h3>--CAMBIAR NOMBRE DE RAMA ACTUAL</h3>
+      <p>git branch -m nombreRandon2</p>
+    <h3>--CAMBIAR NOMBRE DE UNA RAMA SIN ESTAR EN ELLA</h3>
+      <p>git branch -m nombreRandon nombreRandon2</p>
+    <h3>--BORRAR RAMA NECESARIAMENTE SIN ESTAR EN ELLA</h3>
+      <p>git branch -d nombreRandon</p>
+    <h3>--FUSIONAR RAMA PRINCIPAL CON CUALQUIER RAMA</h3>
+      <p>git merge nombreRandon</p>
+    <h2>//RAMAS PARA PRODUCCIÓN//</h2>
+    <h3>--VER NOMBRE DEL REPOSITORIO REMOTO (WEB)</h3>
+      <p>git remote</p>
+    <h2>//REPOSITORIO//</h2>
+    <h3>--SUBIR AL REPOSITORIO DE LA NUBE</h3>
+      <p>git push</p>
+    <h2>//CREAR LLAVE SSH//</h2>
+    <h3>-- GENERAR SSH KEY LA T = TIPO, B = BYTEE, C = CORREO DEL USUARIO GIT</h3>
+      <p>ssh-keygen -t rsa -b 4096 -C "correoejemplo@gmail.com"</p>
+  </details>
+</Layout>

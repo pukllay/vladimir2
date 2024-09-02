@@ -1,0 +1,80 @@
+
+*{
+  font-size: 18px;
+  color: azure;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(0, 0, 0);
+  font-family: "Verdana", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+}
+/* main{
+  background-position: center center;
+  height: calc(100vh - 80px);
+} */
+
+span{
+  color: chartreuse;
+}
+pre{
+  background-color: #272727;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto; /* Permite el scroll horizontal */
+}
+mark{
+  background-color: rgb(5, 1, 187)
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 5px; 
+  width: 100%;
+}
+th, td {
+  padding: 10px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add thin borders */
+}
+th, .table__ia td {
+  padding: 10px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add thin borders */
+  text-align: center; /* Center text in name cells */
+}
+pre dl{
+  margin: 0;
+}
+section {
+  display: grid;
+  gap: 10px;
+}
+input{
+  background-color: black;
+  margin-top: 2px;
+  color: azure;
+}
+blockquote{
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.copy-button {
+  cursor: pointer;
+  color: rgb(0, 196, 16);
+  background-color: #4b4b4b;
+}
+/* Para móviles: Una tabla por fila */
+@media (max-width: 600px) {
+  section {
+      grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  section {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  section {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}

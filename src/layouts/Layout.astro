@@ -1,0 +1,48 @@
+---
+import Header from '../components/Header.astro';
+export interface Props {
+  title: string;
+  url: string;
+}
+const { title, url } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La ruta del tonto | aprendiendo a programar, soporte técnico, redes, IA y mucho más">
+  <meta name="keywords" content="blog, programador, desarrollador, frontend, backend, ingeniero de sistemas, inteligencia artificial, la ruta del tonto">
+  <meta name="author" content="Vladimir Vicencio">
+  <!-- <meta name="generator" content={Astro.generator} /> -->
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content={url} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content="La ruta del tonto | aprendiendo a programar, soporte técnico, redes, IA y mucho más">
+  <meta property="og:image" content={`${url}img/portada.webp`} />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content={title}>
+  <meta property="og:updated_time" content="2024-08-19T12:15:10-04:00">
+  <meta property="og:image:alt" content={title}>
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content={url}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content="La ruta del tonto | aprendiendo a programar, soporte técnico, redes, IA y mucho más">
+  <meta property="twitter:image" content={`${url}img/portada.webp`}>
+  <meta property="twitter:site" content="@vladimir_s_vicencio">
+  <meta property="twitter:domain" content="pukllay.github.io/vladimir">
+  <meta property="twitter:creator" content="@vladimir_s_vicencio">
+  <title>{title}</title>
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" type="image/svg+xml" href="/images/otro-icono.svg"> -->
+  <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+  <Header />
+  <main>
+    <slot />
+  </main>
+</body>
+</html>

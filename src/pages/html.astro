@@ -1,0 +1,230 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="La ruta del tonto | aprendiendo HTML" url="https://pukllay.github.io/vladimir/html.html">
+  <p><a href="https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html" target="_blank">Simbolos html</a></p>
+
+  <details>
+  <summary><strong><span>&lt;a&gt;</span> <span>&lt;/a&gt;</span></strong> | Sirve para crear enlaces</summary>
+  <pre>
+    <code><span>&lt;a href="https:..." target="_blank" (Abrir en pestaña nueva)&gt;</span>Titulo del enlace<span>&lt;/a&gt;</span>
+    <a href="#" target="_blank">Titulo del enlace</a></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;blockquote&gt;</span> <span>&lt;/blockquote&gt;</span></strong> | Citas en bloque extensas.</summary>
+  <pre>
+    <code><span>&lt;blockquote&gt;</span>
+      &lt;p&gt;Solo sé que nada se&lt;/p&gt;
+      &lt;cite&gt;Sócrates&lt;/cite&gt;
+    <span>&lt;/blockquote&gt;</span><blockquote><p>"Solo sé que nada se"</p>
+      <cite>Sócrates</cite></blockquote>
+    ______________________________________________________________________________________
+    <span>&lt;blockquote cite="https://www.wikipedia.org/wiki/Computaci%C3%B3n"&gt;</span>
+      "La computación es el proceso de tratar información y ejecutar tareas utilizando computadoras."
+    <span>&lt;/blockquote&gt;</span><blockquote cite="https://www.wikipedia.org/wiki/Computaci%C3%B3n">
+      "La computación es el proceso de tratar información y ejecutar tareas utilizando computadoras."
+    </blockquote></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;details&gt;</span> <span>&lt;/details&gt;</span></strong> | Elemento desplegable que abre contenido al hacer clic en su resumen summary</summary>
+  <pre>
+    <code><span>&lt;details&gt;</span>
+      &lt;summary&gt;Titulo&lt;/summary&gt;
+      &lt;p&gt;Contenido&lt;/p&gt;
+    <span>&lt;/details&gt;</span><details><summary>Titulo</summary><p>Contenido</p></details></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;dl&gt;</span> <span>&lt;/dl&gt;</span></strong> | Lista de definiciones</summary>
+  <pre>
+    <code><span>&lt;dl&gt;</span>
+      &lt;dt&gt;Hardware&lt;/dt&gt;
+        &lt;dd&gt;Parte física de un ordenador o sistema informático&lt;/dd&gt;
+      &lt;dt&gt;Software&lt;/dt&gt;
+        &lt;dd&gt;Programa o conjunto de programas de cómputo&lt;/dd&gt;
+      &lt;dt&gt;ERP&lt;/dt&gt;
+        &lt;dd&gt;Erprise Resource Planning&lt;/dd&gt;
+    <span>&lt;/dl&gt;</span>
+    <dl><dt>Hardware</dt><dd>Parte física de un ordenador o sistema informático</dd>
+      <dt>Software</dt><dd>Programa o conjunto de programas de cómputo</dd>
+      <dt>ERP</dt><dd>Erprise Resource Planning</dd>
+    </dl></code></pre>
+  </details>
+
+
+
+  <details>
+  <summary><strong><span>&lt;html&gt;</span> <span>&lt;/html&gt;</span></strong></summary>
+  <pre>
+    <code>&lt;!DOCTYPE html &gt;
+      <span>&lt;html</span> lang="es"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;/body&gt;
+      <span>&lt;/html&gt;</span></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;iframe&gt;</span> <span>&lt;/iframe&gt;</span></strong> | Inserta una página web dentro de otra</summary>
+  <pre>
+    <code><span>&lt;iframe&gt;
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62397.09536405512!2d-77.00640715!3d-12.192752649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9deeb34c327%3A0x4f7929b6bba87e8e!2sChorrillos!5e0!3m2!1ses-419!2spe!4v1717655027962!5m2!1ses-419!2spe" 
+      width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;</span>
+    <span>&lt;/iframe&gt;</span></code>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62397.09536405512!2d-77.00640715!3d-12.192752649999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9deeb34c327%3A0x4f7929b6bba87e8e!2sChorrillos!5e0!3m2!1ses-419!2spe!4v1717655027962!5m2!1ses-419!2spe" 
+  width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></pre>
+  </details>
+
+
+  <details>
+  <summary><strong><span>&lt;img&gt;</span></strong> | Sirve para crear enlaces</summary>
+  <pre>
+    <code><span>&lt;img src="img/chatgpt.png" alt="Titulo descriptivo" title="Titulo"&gt;</span></code>
+    <img src="img/chatgpt.png" alt="Titulo description" title="Titulo"></pre>
+  </details>
+
+
+
+  <details>
+  <summary><strong><span>&lt;ol&gt;</span> <span>&lt;/ol&gt;</span></strong> | Lista ordenada</summary>
+  <pre>
+    <code><span>&lt;ol&gt;</span>
+      &lt;li&gt;Inicio&lt;/li&gt;
+      &lt;li&gt;Productos&lt;/li&gt;
+      &lt;li&gt;Contactos&lt;/li&gt;
+    <span>&lt;/ol&gt;</span><ol><li>Inicio</li><li>Productos</li><li>Contactos</li></ol></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;samp&gt;</span> <span>&lt;/samp&gt;</span></strong> | Resalta texto que representa la salida de un programa o comando. Sale con topografía monoespaciada.</summary>
+  <pre>
+    <code>&lt;p&gt;El resultado de la operación es: <span>&lt;samp&gt;</span>42<span>&lt;/samp&gt;</span>&lt;/p&gt;
+      El resultado de la operación es: <samp><span>42</span></samp>
+    ______________________________________________________________________________________
+    &lt;pre&gt;
+      <span>&lt;samp&gt;</span>
+      function calcularImpuesto(total) &#123;
+        return total * 0.18;
+        &#125;
+      <span>&lt;/samp&gt;</span>
+    &lt;/pre&gt;
+        <samp><span>function calcularImpuesto(total) &#123;
+          return total * 0.18;
+          &#125;</span></samp>
+    ______________________________________________________________________________________
+    &lt;p&gt;Para instalar el paquete, ejecuta: <span>&lt;samp&gt;</span>npm install mi-paquete<span>&lt;/samp&gt;</span>&lt;/p&gt;
+    Para instalar el paquete, ejecuta: <samp><span>npm install mi-paquete</span></samp></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;table&gt;</span> <span>&lt;/table&gt;</span></strong></summary>
+  <pre>
+    <code><span>&lt;table&gt;</span>
+      &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;DNI&lt;/th&gt;
+        &lt;th&gt;Cargo&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Vladimir&lt;/td&gt;
+        &lt;td&gt;25641641&lt;/td&gt;
+        &lt;td&gt;Programador&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Karen&lt;/td&gt;
+        &lt;td&gt;54198484&lt;/td&gt;
+        &lt;td&gt;Diseño UI&lt;/td&gt;
+      &lt;/tr&gt;
+    <span>&lt;/table&gt;</span>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Cargo</th>
+      </tr>
+      <tr>
+        <td>Vladimir</td>
+        <td>25641641</td>
+        <td>Programador</td>
+      </tr>
+      <tr>
+        <td>karen</td>
+        <td>54198484</td>
+        <td>Diseño UI</td>
+      </tr>
+    </table></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;ul&gt;</span> <span>&lt;/ul&gt;</span></strong> | Lista desordenada</summary>
+  <pre>
+    <code><span>&lt;ul&gt;</span>
+      &lt;li&gt;Inicio&lt;/li&gt;
+      &lt;li&gt;Productos&lt;/li&gt;
+      &lt;li&gt;Contactos&lt;/li&gt;
+    <span>&lt;/ul&gt;</span><ul><li>Inicio</li><li>Productos</li><li>Contactos</li></ul></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>&lt;var&gt;</span> <span>&lt;/var&gt;</span></strong> | Para poner formulas matemáticas o variables</summary>
+  <pre>
+    <code>&lt;p&gt;Einstein descubrió que: <span>&lt;var&gt;</span>E = m c &lt;sup&gt;2&lt;/sup&gt;<span>&lt;/var&gt;</span>&lt;/p&gt;
+    Einstein descubrió que: <var><span>E = m c </span><sup><span>2</span></sup></var></code></pre>
+  </details>
+
+
+  <details>
+  <summary><strong><span>Formateo de texto</span></strong></summary>
+  <pre>
+    <code><span>&lt;i&gt;</span><i>Texto cursiva</i><span>&lt;/i&gt;</span>
+    <span>&lt;b&gt;</span><b>Texto negrita</b><span>&lt;/b&gt;</span>
+    <span>&lt;strong&gt;</span><strong>En negrita y ayuda al SEO</strong><span>&lt;/strong&gt;</span>
+    &lt;p&gt;Según la convención <span>&lt;q&gt;</span><q>citas cortas o fraces sueltas</q><span>&lt;/q&gt;</span>&lt;/p&gt;
+    &lt;p&gt;Significado de siglas <span>&lt;abbr title="HyperText Markup Language"&gt;</span><abbr title="HyperText Markup Language">HTML</abbr><span>&lt;/abbr&gt;</span>&lt;/p&gt;
+    <span>&lt;mark&gt;</span><mark>Texto resaltado</mark><span>&lt;/mark&gt;</span>
+    <span>&lt;ins&gt;</span><ins>Texto subrayado</ins><span>&lt;/ins&gt;</span>
+    <span>&lt;del&gt;</span><del>Texto tachado</del><span>&lt;/del&gt;</span>
+    &lt;p&gt;Texto superíndice <span>&lt;sup&gt;</span><sup>por encima</sup><span>&lt;/sup&gt;</span>&lt;/p&gt;
+    &lt;p&gt;Texto subíndice <span>&lt;sub&gt;</span><sub>por debajo</sub><span>&lt;/sub&gt;</span>&lt;/p&gt;</code></pre>
+  </details>
+  <details>
+  <summary><strong><span>Tipos de input</span></strong></summary>
+  <pre>
+    <code><span>&lt;input type="text"&gt; </span><input type="text">
+    <span>&lt;input type="email" placeholder="Correo"&gt; </span><input type="email" placeholder="Correo">
+    <span>&lt;input type="password"&gt; </span><input type="password">
+    <span>&lt;input type="radio"&gt; </span><input type="radio">
+    <span>&lt;input type="checkbox"&gt; </span><input type="checkbox">
+    <span>&lt;input type="button" value="enviar"&gt; </span><input type="button" value="enviar">
+    <span>&lt;input type="file"&gt; </span><input type="file">
+    <span>&lt;input type="hidden"&gt; </span><input type="hidden">
+    <span>&lt;input type="image" src="img/logo.png" alt="Submit"&gt; </span><input type="image" src="img/logo.png" alt="Submit">
+    <span>&lt;input type="number"&gt; </span><input type="number">
+    <span>&lt;input type="range"&gt; </span><input type="range">
+    <span>&lt;input type="search"&gt; </span><input type="search">
+    <span>&lt;input type="tel"&gt; </span><input type="tel">
+    <span>&lt;input type="color"&gt; </span><input type="color">
+    <span>&lt;input type="time"&gt; </span><input type="time">
+    <span>&lt;input type="date"&gt; </span><input type="date"></code></pre>
+  </details>
+
+  <details>
+  <summary><strong><span>Otras etiquetas</span></strong></summary>
+  <pre>
+    <code><span>&lt;article&gt; </span> | Define un articulo
+    <span>&lt;aside&gt; </span> | Define el contenido aparte del contenido de la página
+    <span>&lt;figoaption&gt; </span> | Define un título para un elemento &lt;figure&gt;
+    <span>&lt;figure&gt; </span> | Especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de códigos, etc.
+    <span>&lt;footer&gt; </span> | Define un pie de página para un documento o sección
+    <span>&lt;main&gt; </span> | Especifica un encabezado para un documento o sección
+    <span>&lt;nav&gt; </span> | Define enlaces de navegación
+    <span>&lt;aside&gt; </span> | Define el contenido aparte del contenido de la página
+    <span>&lt;section&gt; </span> | Define una sección en un documento</code></pre>
+  </details>
+</Layout>
